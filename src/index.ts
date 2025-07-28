@@ -118,7 +118,8 @@ function drawYear(ctx: CanvasRenderingContext2D, opts: DrawYearOptions) {
 
   const today = new Date();
   const thisYear = format(today, "yyyy");
-  const lastDate = year.year === thisYear ? today : parseISO(year.range.end);
+  // const lastDate = year.year === thisYear ? today : parseISO(year.range.end);
+  const lastDate = parseISO(year.range.end); // 不管是不是当前年，都用完整的年底
   const firstRealDate = parseISO(`${year.year}-01-01`);
   const firstDate = startOfWeek(firstRealDate);
 
