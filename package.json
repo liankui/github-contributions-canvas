@@ -32,7 +32,7 @@
     "singleQuote": false,
     "trailingComma": "none"
   },
-  "name": "github-contributions-canvas",
+  "name": "liankui-github-contributions-canvas",
   "author": "Sallar Kaboli",
   "module": "dist/github-contributions-canvas.esm.js",
   "size-limit": [
